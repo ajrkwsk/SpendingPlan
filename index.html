@@ -5,8 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spending plan</title>
+    <script src="https://kit.fontawesome.com/bd2357e533.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <header class="header">
+        <h1><i class="far fa-credit-card"></i> Kontroler wydatków</h1>
+        <p class="title">Miej kontrolę nad wydatkami związanymi z budową domu</p>
+        <div class="box-costs">
+            <p><i class="fas fa-hand-holding-usd"></i> Wszystkie poniesione koszty: <span class="total-costs">3200 zł</span></p>
+        </div>
+        <div class="header-buttons">
+            <button class="add-cost">Dodaj wydatek</button>  
+            <button class="delete-all">Usuń wszystkie wydatki</button>
+        </div>
+    </header>
+
+    <div class="cost-area">
+        <label for="category">Wybierz kategorię: </label>
+        <select id="category">
+            <option value="0" selected disabled>- Wybierz kategorię -</option>
+            <option value="1">Dokumentacja</option>
+            <option value="2">Stan surowy</option>
+            <option value="3">Stan wykończeniowy wewnętrzny</option>
+            <option value="4">Stan wykończeniowy zewnętrzny</option>
+        </select><br>
+        <label for="title">Tytuł: </label>
+        <input type="text" id="title" placeholder="Podaj tytuł"><br>
+        <label for="amount">Kwota: </label>
+        <input type="number" id="amount" placeholder="Podaj kwotę">
+        <p class="error">Uzupełnij wszystkie pola!</p>
+        <div class="buttons">
+            <button class="save">Zapisz</button>
+            <button class="cancel">Anuluj</button>
+        </div>
+    </div>
+
+    <main>
+        <section class="card-box">
+            <div class="card">
+                <div class="header-card">
+                    <h3>Dokumentacja</h3>
+                    <p>Suma: <span class="cost">3200 zł</span></p>
+                </div>
+                <div class="body-card" id="0">
+                    <div class="body-title">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <p class="cost-name">Stal</p>
+                        <p class="cost-amount">1940</p>
+                    </div>
+                    <button><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="header-card">
+                    <h3>Stan surowy</h3>
+                    <p>Suma: <span class="cost">1940 zł</span></p>
+                </div>
+                <div class="body-card" id="1">
+                    <div class="body-title">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <p class="cost-name">Stal</p>
+                        <p class="cost-amount">1940</p>
+                    </div>
+                    <button><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="header-card">
+                    <h3>Stan wykończeniowy wewętrzny</h3>
+                    <p>Suma: <span class="cost">1940 zł</span></p>
+                </div>
+                <div class="body-card" id="1">
+                    <div class="body-title">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <p class="cost-name">Stal</p>
+                        <p class="cost-amount">1940</p>
+                    </div>
+                    <button><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="header-card">
+                    <h3>Stan wykończeniowy zewnętrzny</h3>
+                    <p>Suma: <span class="cost">1940 zł</span></p>
+                </div>
+                <div class="body-card" id="1">
+                    <div class="body-title">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <p class="cost-name">Stal</p>
+                        <p class="cost-amount">1940</p>
+                    </div>
+                    <button><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
     
+    <script src="./js/script.js"></script>
 </body>
 </html>
