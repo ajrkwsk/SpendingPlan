@@ -17,6 +17,7 @@ const totalCost = document.querySelector('.total-costs');
 let expenseID = 0;
 let bodyCard;
 let costArray = [];
+let newCard;
 
 const changeForm = () => {
     if(category.value == 0 || title.value == '' || amount.value == ''){
@@ -97,7 +98,8 @@ const deleteAll = () => {
 
 const deleteCost = id => {
     costToDelete = document.getElementById(id);
-    card.removeChild(costToDelete);
+    // card.removeChild(costToDelete);
+    newCard.removeChild(costToDelete);
 }
 
 addCostBtn.addEventListener('click', function() {
