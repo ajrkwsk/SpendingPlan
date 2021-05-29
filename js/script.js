@@ -10,7 +10,7 @@ const title = document.querySelector('#title');
 const amount = document.querySelector('#amount');
 const error = document.querySelector('.error');
 const card = document.querySelector('.card');
-const cost = document.querySelector('.cost');
+const cost = document.querySelectorAll('.cost');
 const costAmount = document.getElementById('cost-amount');
 const totalCost = document.querySelector('.total-costs');
 
@@ -53,11 +53,33 @@ const saveCost = () => {
             </div>
             <button onClick=deleteCost(${expenseID})><i class="fas fa-times"></i></button>`;
 
-        card.appendChild(bodyCard);
+        // card.appendChild(bodyCard);
         expenseID++;
+        changeCategory();
         additionCost();
         cleanForm();
     } 
+}
+
+const changeCategory = () => {
+    switch(category.value) {
+        case '1':
+            newCard = document.querySelector('.documentation');
+            newCard.appendChild(bodyCard);
+            break;
+        case '2':
+            newCard = document.querySelector('.basic-state');
+            newCard.appendChild(bodyCard);
+            break;
+        case '3':
+            newCard = document.querySelector('.inside-finish');
+            newCard.appendChild(bodyCard);
+            break;
+        case '4':
+            newCard = document.querySelector('.outside-finish');
+            newCard.appendChild(bodyCard);
+            break;
+    }
 }
 
 const additionCost = () => {
