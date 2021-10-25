@@ -57,7 +57,7 @@ button:hover {
 }
 
 .cost-area {
-    display: block;
+    display: none;
     padding: 20px 0;
     text-align: center;
     font-size: 18px;
@@ -91,7 +91,7 @@ input, select {
 }
 
 .card {
-    width: 25%;
+    width: 500px;
     margin: 40px 10px;
     border: 1px solid rgb(150, 135, 135);
 }

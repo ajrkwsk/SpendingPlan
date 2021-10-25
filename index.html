@@ -13,7 +13,7 @@
         <h1><i class="far fa-credit-card"></i> Kontroler wydatków</h1>
         <p class="title">Miej kontrolę nad wydatkami związanymi z budową domu</p>
         <div class="box-costs">
-            <p><i class="fas fa-hand-holding-usd"></i> Wszystkie poniesione koszty: <span class="total-costs">3200 zł</span></p>
+            <p><i class="fas fa-hand-holding-usd"></i> Wszystkie poniesione koszty: <span class="total-costs">3200</span> zł</p>
         </div>
         <div class="header-buttons">
             <button class="add-cost">Dodaj wydatek</button>  
@@ -43,63 +43,39 @@
 
     <main>
         <section class="card-box">
-            <div class="card">
+            <div class="card documentation">
                 <div class="header-card">
                     <h3>Dokumentacja</h3>
-                    <p>Suma: <span class="cost">3200 zł</span></p>
+                    <p>Suma: <span class="cost cost-documentation"></span> zł</p>
                 </div>
-                <div class="body-card" id="0">
+                <!-- <div class="body-card">
                     <div class="body-title">
                         <i class="fas fa-hand-holding-usd"></i>
                         <p class="cost-name">Stal</p>
                         <p class="cost-amount">1940</p>
                     </div>
                     <button><i class="fas fa-times"></i></button>
-                </div>
+                </div> -->
             </div>
 
-            <div class="card">
+            <div class="card basic-state">
                 <div class="header-card">
-                    <h3>Stan surowy</h3>
-                    <p>Suma: <span class="cost">1940 zł</span></p>
-                </div>
-                <div class="body-card" id="1">
-                    <div class="body-title">
-                        <i class="fas fa-hand-holding-usd"></i>
-                        <p class="cost-name">Stal</p>
-                        <p class="cost-amount">1940</p>
-                    </div>
-                    <button><i class="fas fa-times"></i></button>
+                    <h3>Stan surowy zamknięty</h3>
+                    <p>Suma: <span class="cost cost-basic-state"></span> zł</p>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card inside-finish">
                 <div class="header-card">
                     <h3>Stan wykończeniowy wewętrzny</h3>
-                    <p>Suma: <span class="cost">1940 zł</span></p>
-                </div>
-                <div class="body-card" id="1">
-                    <div class="body-title">
-                        <i class="fas fa-hand-holding-usd"></i>
-                        <p class="cost-name">Stal</p>
-                        <p class="cost-amount">1940</p>
-                    </div>
-                    <button><i class="fas fa-times"></i></button>
+                    <p>Suma: <span class="cost cost-inside-finish"></span> zł</p>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card outside-finish">
                 <div class="header-card">
                     <h3>Stan wykończeniowy zewnętrzny</h3>
-                    <p>Suma: <span class="cost">1940 zł</span></p>
-                </div>
-                <div class="body-card" id="1">
-                    <div class="body-title">
-                        <i class="fas fa-hand-holding-usd"></i>
-                        <p class="cost-name">Stal</p>
-                        <p class="cost-amount">1940</p>
-                    </div>
-                    <button><i class="fas fa-times"></i></button>
+                    <p>Suma: <span class="cost cost-outside-finish"></span> zł</p>
                 </div>
             </div>
         </section>
